@@ -77,3 +77,12 @@ plt.title("Diagrama de Caja de Ancho del Petalo")
 plt.xlabel("clasificado")
 plt.ylabel("Ancho del Petalo (cm)")
 plt.show()
+
+
+
+
+##Concluir según resultados
+    #La mayoría de las flores son no margaritas, hay aproximadamente 8 flores que son margaritas. 
+    #Esta clasificación se debe a la longitud del petalo, donde las margaritas son de menor longitud de petalo,
+    #tambien se puede observar que las margaritas son de mayor ancho de sepalo.
+    #Y que la clasificación de no es margarita, tiene bastante desviación y 4 outliers. 
