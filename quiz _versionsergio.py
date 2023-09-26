@@ -31,7 +31,8 @@ print(df.head())
 
 # Ruta al archivo CSV de transformado
 #archivo_transformado = "iris_transformado.csv"
-archivo_transformado = "g1Quiz\iris_transformado.csv"
+#archivo_transformado = "g1Quiz\iris_transformado.csv"
+archivo_transformado = "iris_transformado.csv"
 # Guardar los datos transformados en un nuevo archivo CSV
 df.to_csv(archivo_transformado, index=False)
 
@@ -50,8 +51,29 @@ plt.show()
 
 
 # Diagrama de caja de longitud del pétalo por especie
-sns.boxplot(data=df, x="target", y="petal length (cm)")
+sns.boxplot(data=df, x="clasificado", y="petal length (cm)")
 plt.title("Diagrama de Caja de Longitud del Pétalo")
 plt.xlabel("clasificado")
 plt.ylabel("Longitud del Pétalo (cm)")
+plt.show()
+
+# Diagrama de caja de longitud del sepalo por especie
+sns.boxplot(data=df, x="clasificado", y="sepal length (cm)")
+plt.title("Diagrama de Caja de Longitud del Sepalo")
+plt.xlabel("clasificado")
+plt.ylabel("Longitud del Sepalo (cm)")
+plt.show()
+
+# Diagrama de caja de longitud del sepalo por especie
+sns.boxplot(data=df, x="clasificado", y="sepal width (cm)")
+plt.title("Diagrama de Caja de Ancho del Sepalo")
+plt.xlabel("clasificado")
+plt.ylabel("Ancho del Sepalo (cm)")
+plt.show()
+
+# Diagrama de caja de longitud del sepalo por especie
+sns.boxplot(data=df, x="clasificado", y="petal width (cm)")
+plt.title("Diagrama de Caja de Ancho del Petalo")
+plt.xlabel("clasificado")
+plt.ylabel("Ancho del Petalo (cm)")
 plt.show()
