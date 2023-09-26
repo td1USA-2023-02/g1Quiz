@@ -31,7 +31,7 @@ print(df.head())
 
 # Ruta al archivo CSV de transformado
 #archivo_transformado = "iris_transformado.csv"
-archivo_transformado = "C:\\Users\\USUARIO\\Desktop\\iris_transformado.csv"
+archivo_transformado = "g1Quiz\iris_transformado.csv"
 # Guardar los datos transformados en un nuevo archivo CSV
 df.to_csv(archivo_transformado, index=False)
 
