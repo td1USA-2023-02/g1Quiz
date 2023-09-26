@@ -30,10 +30,28 @@ print(df.head())
 ##Cargar csv
 
 # Ruta al archivo CSV de transformado
-archivo_transformado = "iris_transformado.csv"
-
+#archivo_transformado = "iris_transformado.csv"
+archivo_transformado = "C:\\Users\\USUARIO\\Desktop\\iris_transformado.csv"
 # Guardar los datos transformados en un nuevo archivo CSV
 df.to_csv(archivo_transformado, index=False)
 
+
 # Verificar que se haya guardado correctamente
 print(f"Los datos transformados se han guardado en {archivo_transformado}")
+
+print(df.head())
+##EDA 
+
+
+
+#Countplot
+sns.countplot(df, x="clasificado").set(title="Cantidad de margaritas y no margaritas")
+plt.show()
+
+
+# Diagrama de caja de longitud del pétalo por especie
+sns.boxplot(data=df, x="target", y="petal length (cm)")
+plt.title("Diagrama de Caja de Longitud del Pétalo")
+plt.xlabel("clasificado")
+plt.ylabel("Longitud del Pétalo (cm)")
+plt.show()
