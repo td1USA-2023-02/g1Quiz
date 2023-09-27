@@ -79,10 +79,25 @@ plt.ylabel("Ancho del Petalo (cm)")
 plt.show()
 
 
+# Histograma de las longitudes del sépalo para cada clasificacion
+sns.histplot(data=df, x="sepal length (cm)", hue="clasificado", bins=20)
+plt.title("Histograma de Longitud del Sépalo")
+plt.xlabel("Longitud del Sépalo (cm)")
+plt.ylabel("Frecuencia")
+plt.show()
 
+# Diagrama de dispersión de longitud del sépalo vs. ancho del sépalo
+sns.scatterplot(data=df, x="petal length (cm)", y="petal width (cm)", hue="clasificado")
+plt.title("Diagrama de Dispersión Sépalo")
+plt.xlabel("Longitud del petalo (cm)")
+plt.ylabel("Ancho del petalo (cm)")
+plt.show()
 
 ##Concluir según resultados
     #La mayoría de las flores son no margaritas, hay aproximadamente 8 flores que son margaritas. 
     #Esta clasificación se debe a la longitud del petalo, donde las margaritas son de menor longitud de petalo,
     #tambien se puede observar que las margaritas son de mayor ancho de sepalo.
     #Y que la clasificación de no es margarita, tiene bastante desviación y 4 outliers. 
+    #De acuerdo al ancho de petalo, las margaritas tienen menor ancho de petalo y los que no son margarita tienen bastante variación.
+    #En el histograma según la longitud del sepalo se puede observar como las flores que son margaritas, tienen una longitud de aproximadamente 5 a 5.6.
+    #
